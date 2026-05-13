@@ -1,0 +1,10 @@
+{
+  "name": "the-grand-table",
+  "version": "1.0.0",
+  "description": "Premium luxury restaurant website",
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "install": "echo 'No install step required'"
+  },
+  "dependencies": {}
+}
