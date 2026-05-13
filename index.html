@@ -1,10 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=frontend/index.html" />
-    <title>Redirecting to The Grand Table</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grand Table | Luxury Dining Experience</title>
+    <meta name="description" content="Experience the finest gourmet cuisine at The Grand Table. Luxury dining with a touch of gold.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <p>Redirecting to the website... If you are not redirected, <a href="frontend/index.html">click here</a>.</p>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <a href="#" class="logo">THE GRAND TABLE</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#chef">Chef</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="nav-btn">Book a Table</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-parallax"></div>
+        <div class="reveal">
+            <p>Welcome to Perfection</p>
+            <h1>THE GRAND TABLE</h1>
+            <a href="#menu" class="btn-premium">Explore Menu</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img reveal">
+            <img src="assets/gallery-1.png" alt="Restaurant Interior">
+        </div>
+        <div class="about-content reveal">
+            <h2 class="section-title">A Legacy of Taste</h2>
+            <p class="section-subtitle">Defining luxury dining since 1994</p>
+            <p>At The Grand Table, we believe that dining is more than just a meal—it's an art form. Every dish is a masterpiece, crafted with the finest ingredients sourced globally and prepared with meticulous precision.</p>
+            <br>
+            <p>Our atmosphere is designed to transport you to a world of elegance and sophistication, where every detail is tailored to provide an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div style="text-align: center;" class="reveal">
+            <h2 class="section-title">Our Signature Menu</h2>
+            <p class="section-subtitle">Hand-picked delicacies for the connoisseur</p>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Menu Card 1 -->
+            <div class="menu-card reveal">
+                <div class="menu-card-img">
+                    <img src="assets/menu-1.png" alt="Signature Steak">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h3>Wagyu Reserve</h3>
+                        <span class="price">$120</span>
+                    </div>
+                    <p style="color: var(--text-muted);">A5 Grade Wagyu beef, truffle-infused potato mousseline, and 24k gold leaf garnish.</p>
+                </div>
+            </div>
+
+            <!-- Menu Card 2 -->
+            <div class="menu-card reveal">
+                <div class="menu-card-img">
+                    <img src="assets/menu-2.png" alt="Seafood Platter">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h3>Ocean's Treasure</h3>
+                        <span class="price">$95</span>
+                    </div>
+                    <p style="color: var(--text-muted);">Brittany lobster, Hokkaido scallops, and Beluga caviar served with lemon butter sauce.</p>
+                </div>
+            </div>
+
+            <!-- Menu Card 3 -->
+            <div class="menu-card reveal">
+                <div class="menu-card-img">
+                    <img src="assets/menu-3.png" alt="Signature Dessert">
+                </div>
+                <div class="menu-card-content">
+                    <div class="menu-card-header">
+                        <h3>Golden Sphere</h3>
+                        <span class="price">$45</span>
+                    </div>
+                    <p style="color: var(--text-muted);">Dark chocolate sphere, hazelnut praline, and warm caramel drizzle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef Section -->
+    <section class="chef" id="chef">
+        <div class="chef-img reveal">
+            <img src="assets/chef.png" alt="Executive Chef">
+        </div>
+        <div class="chef-content reveal">
+            <h2 class="section-title">Meet the Visionary</h2>
+            <p class="section-subtitle">Executive Chef Julian Vasseur</p>
+            <p>With over two decades of experience in Michelin-starred kitchens across Europe, Chef Julian brings a unique blend of traditional techniques and modern innovation to The Grand Table.</p>
+            <br>
+            <p>"Cooking is a language of love and precision. Every plate I send out is a story I want to tell our guests."</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div style="text-align: center;" class="reveal">
+            <h2 class="section-title">Guest Experiences</h2>
+            <p class="section-subtitle">Words from our valued patrons</p>
+        </div>
+        <div class="reviews-container reveal">
+            <!-- Existing reviews... -->
+            <div class="review-card">
+                <p class="review-text">"An absolute masterpiece of a dining experience. The attention to detail is unparalleled, and the flavors are simply out of this world."</p>
+                <div class="reviewer">
+                    <span class="reviewer-name">James Anderson</span>
+                    <span style="color: gold;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+            </div>
+            <div class="review-card">
+                <p class="review-text">"The Grand Table redefined what luxury means to me. From the moment I stepped in, I felt like royalty. The Wagyu is a must-try!"</p>
+                <div class="reviewer">
+                    <span class="reviewer-name">Sophia Loren</span>
+                    <span style="color: gold;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+            </div>
+            <div class="review-card">
+                <p class="review-text">"The perfect place for a romantic evening. The atmosphere is intimate and the wine selection is extensive."</p>
+                <div class="reviewer">
+                    <span class="reviewer-name">Michael Chen</span>
+                    <span style="color: gold;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Review Form -->
+        <div class="add-review reveal" style="margin-top: 80px; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center;">
+            <h3 style="color: var(--primary-gold); margin-bottom: 20px; font-family: 'Playfair Display', serif;">Share Your Experience</h3>
+            <form id="reviewForm" class="contact-form">
+                <div class="star-rating" style="margin-bottom: 20px; font-size: 1.5rem; color: #333;">
+                    <i class="fas fa-star star-btn" data-rating="1"></i>
+                    <i class="fas fa-star star-btn" data-rating="2"></i>
+                    <i class="fas fa-star star-btn" data-rating="3"></i>
+                    <i class="fas fa-star star-btn" data-rating="4"></i>
+                    <i class="fas fa-star star-btn" data-rating="5"></i>
+                </div>
+                <input type="hidden" id="ratingValue" value="5">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="3" placeholder="Tell us about your visit..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Review</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div style="text-align: center;" class="reveal">
+            <h2 class="section-title">A Glimpse of Elegance</h2>
+            <p class="section-subtitle">Visual stories from our restaurant</p>
+        </div>
+        <div class="gallery-grid" style="margin-top: 50px;">
+            <div class="gallery-item reveal">
+                <img src="assets/hero.png" alt="Plating">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="assets/gallery-1.png" alt="Dining Area">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="assets/gallery-2.png" alt="Wine Cellar">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="assets/menu-1.png" alt="Steak Closeup">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-info reveal">
+            <h2 class="section-title">Connect With Us</h2>
+            <p class="section-subtitle">Reservations & Inquiries</p>
+            <p><i class="fas fa-location-dot" style="color: var(--primary-gold); margin-right: 10px;"></i> 123 Luxury Avenue, Paris, France</p>
+            <p><i class="fas fa-phone" style="color: var(--primary-gold); margin-right: 10px;"></i> +33 1 23 45 67 89</p>
+            <p><i class="fas fa-envelope" style="color: var(--primary-gold); margin-right: 10px;"></i> reservations@letoiledor.com</p>
+            <br>
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 6:00 PM - 11:00 PM</p>
+            <p>Sat - Sun: 5:00 PM - 12:00 AM</p>
+        </div>
+        <form class="contact-form reveal">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Your Message / Reservation Details" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">THE GRAND TABLE</div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.8rem;">&copy; 2024 The Grand Table Luxury Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

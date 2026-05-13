@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table | The Grand Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="booking-page">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="logo">THE GRAND TABLE</a>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#chef">Chef</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="index.html" class="nav-btn">Back to Home</a>
+    </nav>
+
+    <!-- Booking Hero -->
+    <section class="booking-section">
+        <div class="booking-container reveal active">
+            <div class="booking-header">
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-subtitle">Experience the art of fine dining</p>
+            </div>
+            
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Guests</label>
+                        <select required>
+                            <option value="" disabled selected>Select guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5">5+ Persons</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Reservation Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Reservation Time</label>
+                        <select required>
+                            <option value="" disabled selected>Select time</option>
+                            <option value="18:00">06:00 PM</option>
+                            <option value="18:30">06:30 PM</option>
+                            <option value="19:00">07:00 PM</option>
+                            <option value="19:30">07:30 PM</option>
+                            <option value="20:00">08:00 PM</option>
+                            <option value="20:30">08:30 PM</option>
+                            <option value="21:00">09:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Special Requests</label>
+                    <textarea rows="4" placeholder="Allergies, anniversaries, or special seating..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-premium" style="width: 100%; border: none; cursor: pointer;">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">THE GRAND TABLE</div>
+        <p style="color: var(--text-muted); font-size: 0.8rem;">&copy; 2024 The Grand Table Luxury Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Custom Booking Logic
+        const bookingForm = document.getElementById('bookingForm');
+        if (bookingForm) {
+            bookingForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = bookingForm.querySelector('button');
+                btn.innerText = 'Processing...';
+                btn.style.opacity = '0.7';
+                
+                setTimeout(() => {
+                    alert('Reservation Confirmed! We have sent a confirmation email to your address. We look forward to hosting you at The Grand Table.');
+                    window.location.href = 'index.html';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
